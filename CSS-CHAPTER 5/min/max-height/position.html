@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        li{
+            /* display:inline; */
+            /* background-color: red; */
+        }
+        header{
+            background-color: black;
+            height:60px;
+            color:white;
+            position:sticky;
+            top:0px;
+        }
+        p{
+            text-align:center;
+        }
+        .container{
+            background-color:blue ;
+            height: 650px;vh;
+            width:200vh;
+            border: 20px;
+            border-color: red;
+        }
+        .box{
+            background-color: green;
+            height:200px;
+            width:200px;
+            /* position:relative;
+            top:40px;
+            left:1407px;
+            bottom:400px */
+            /* position:absolute; */
+            position:fixed;
+            right:0;
+            bottom:0;
+        }
+        .box2{
+            background-color: yellow;
+            height:52vh;
+            width:47vh;
+            position:relative;
+            top:102px;
+            left:31px;
+            right:26px;
+        }
+        ul{
+            list-style:circle inside url('banana.jpg');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Conatact us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis impedit ipsum, voluptatem eveniet aut nesciunt repellendus mollitia tempora enim reiciendis officia. Voluptas reprehenderit accusamus expedita earum vitae mollitia asperiores tempore harum veniam similique.
+        </p>
+        <div class="box">
+            <p>
+                Iam a box
+            </p>
+        </div>
+        <div class="box2">
+
+        </div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+</body>
+</html>

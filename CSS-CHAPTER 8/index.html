@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            color:white;
+            height:146px;
+        }
+        .box{
+            border:2px solid black;
+            display: inline-block;
+            /* transform: translate(104px,40px); */
+            /* transform-origin:0; */
+            /* transform:scaleX(2); */
+            /* transform:scale(2,3); */
+            /* transform: skew(4deg,6deg); */
+            /* transform: rotateX(45deg); */
+        }
+        img:hover{
+            width:56px;
+        }
+        img{
+            /* transition-property: width; */
+            width:146px;
+            height:456px;
+            transition-duration: 1s;
+            /* transition-timing-function:ease-in ; */
+            transition: width 1s ease-in-out,height 4s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img id="myimage" src="nature.jpg">
+        <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+<script>
+    myimage.style.width='146px';
+    myimage.style.height="16px";//I defined for the line 32
+    btn.addEventListener("click",()=>
+    {
+        myimage.style.height="456px";
+        if(myimage.style.width ==='546px')
+        {
+            myimage.style.width='146px';
+        }
+        else if(myimage.style.width==='146px')
+        {
+            myimage.style.width='546px';
+        }
+    })
+</script>
+</html>

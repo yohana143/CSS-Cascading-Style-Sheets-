@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin collpase</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            background-color: red;
+            display:inline;
+            /* width: 45%; */
+          /* height: 45vh; */
+        }
+        .box2{
+            background-color: blue;
+            display:inline-block;
+            text-align:center;
+            width:200px;
+            /* margin:20px; */
+            height:1000px;
+        }
+        .box3{
+            background-color: green;
+            display:inline-block;
+            text-align:top;
+            width:200px;
+            height:150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, quo, neque exercitationem obcaecati illum, ex delectus aspernatur tenetur culpa dicta placeat magnam aperiam quos fugit. Nobis delectus voluptates labore aspernatur repellat fugiat quaerat alias.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus doloremque delectus, repellat excepturi debitis animi, dolorem modi in, voluptatum tempora quisquam esse quaerat!
+    </div>
+    <div class="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam fugiat quae repellendus ratione, eveniet laudantium molestias maiores nihil nobis?
+    </div>
+</body>
+</html>

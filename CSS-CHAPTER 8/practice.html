@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .progress{
+            background-color: red;
+            height:3px;
+            animation: load 1s ease-in-out normal;
+        }
+        header{
+            height:122px;
+            background-color: black;
+        }
+        main{
+            height:99px;
+            background-color: blue;
+        }
+        img{
+            display:block;
+            margin:auto;
+        }
+        @keyframes load{
+            0%{
+                width:0;
+            }
+            50%{
+                width:90vw;
+            }
+            100%{
+                width:100vw;
+            }
+        }
+        /* @keyframes imagerotate{
+            0%{
+                width:0;
+            }
+            50%{
+                width:50vw;
+            }
+            100%{
+                width:100vw;
+            } */
+            @keyframes imagerotate{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+        .slider{
+            background-color: aqua;
+            height:500px;
+            overflow:hidden;
+            margin:auto;
+            display:flex;
+            justify-content: center;
+        }
+        .img1{
+            transform:translate(0vw);
+        }
+        .img2{
+            transform:translate(0vw);
+            animation:slide1 2s ease-in-out;
+        }
+       .img3{
+            transform:translate(0vw);
+            animation:slide1 2s ease-in-out;
+        }
+        @keyframes slide1{
+            0%{ 
+                transform:translate(0vw);
+            }
+            100%{
+                transform:translate(92vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    </div>
+    <header>
+
+    </header>
+    <main>
+        <!-- <img src="dragon.webp" width="122px" height="100px"> -->
+        <div class="slider">
+            <img class="img1" src="https//images.unsplash.com/photo-1645160504450-304fea592344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60">
+            <img class="img2" src="https://images.unsplash.com/photo-1645217923596-f4d31dd0f548?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+            <img class="img3" src="https://images.unsplash.com/photo-1645220617910-a7145489a343?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+        </div>
+    </main>
+</body>
+</html>
